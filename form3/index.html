@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Basic Nav Example</title>
+</head>
+<body>
+    <main id="mainContent">
+        <div class="container">
+            <h1 class="">Book your appointment now</h1>
+            <p class="">So our team can reach out to you on time</p>
+            <form class="grid" action="/register" method="POST">
+                <div class="box1">
+                    <label for="name">Full Name</label>
+                    <input class="input" placeholder="eg: John Doe" type="text" id="name" name="name" required>
+                </div>
+                <div class="box2">
+                    <label for="email">Email</label>
+                    <input class="input" placeholder="eg: john@email.com " type="text" id="email" name="email" required>
+                </div>
+                <div class="box3">
+                    <label for="phone">Phone Number</label>
+                    <div class="boxPhone">
+                        <select name="prefix" id="prefix" class="h-full">
+                            <option value="+1">+1</option>
+                            <option value="+971" selected>+971</option>
+                        </select>
+                        <input class="input" placeholder="Phone Number" type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="box4">
+                    <label for="date">Available Date</label>
+                    <select name="date" id="date" class="h-full">
+                        <option value="null">Select</option>
+                        <option value="01/01/1970" selected>01/01/1970</option>
+                    </select>
+                </div>
+                <div class="box5">
+                    <label for="Message">Share Your Message</label>
+                    <textarea class="input input4" placeholder="Message" id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
